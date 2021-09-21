@@ -1,0 +1,140 @@
+p{
+    font-size: 20px;
+}
+a strong{
+    color: #000;
+}
+li{
+    list-style-type: none;
+}
+div.entry-title,
+div.where-do-you-buy-it,
+div.intro-title-nike-store{
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+div.caption-box1,
+div.caption-box2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div#box1{
+    /* height: 100vh; */
+    width: 90%;
+    background-image: url('../images/background4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 0;;
+}
+div#box1>span,
+div#box2>span 
+{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 800;
+    opacity: 0.8;
+}
+div.overview{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+div.overview>div{
+    width: 90%;
+}
+div#box2{
+    /* height: 100vh; */
+    width: 90%;
+    background-image: url('../images/thumb-1920-632668.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 0;;
+}
+div.air-jordan,
+div.air-force-1,
+div.air-max,
+div.air-vapomax,
+div.zoom-pegasus
+{
+    width: 90%;
+    margin: 10px auto;
+}
+
+div.overview-air-jordan>div,
+div.overview-air-force-1>div,
+div.overview-air-max>div,
+div.overview-air-vapomax>div,
+div.overview-zoom-pegasus>div{
+    display: flex;
+}
+
+div.overview-air-jordan>div,
+div.overview-air-max>div,
+div.overview-zoom-pegasus>div{
+    flex-direction: row-reverse;
+}
+
+div.overview-air-jordan p>img,
+div.overview-air-force-1 p>img,
+div.overview-air-max p>img,
+div.overview-air-vapomax p>img,
+div.overview-zoom-pegasus p>img
+{
+    width: 100%;
+}
+
+p.intro-shoes{
+    width: 60%;
+}
+p.img-shoes{
+    width: 40%;
+    margin: 0 10px;
+}
+div.intro-store,
+section.intro-nike-store{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+div.img-store{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.img-store p{
+    width: 48%;
+    margin: 5px;
+}
+div.img-store p img {
+    width: 100%;
+    
+}
+div.img-store p:first-child{
+    margin-top: auto;
+}
+section.intro-nike-store div span{
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+}
+section.intro-nike-store div ul li{
+    padding: 5px 15px;
+    font-size: 20px;
+}
+div.tks{
+    text-align: center;
+    font-weight: bolder;
+}

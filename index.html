@@ -6,7 +6,7 @@
         </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intitial-scale=1.0">
-        <link href="css/style1.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
         <link href="images/iconNike.png" rel="shortcut icon"/>
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,11 +16,9 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         
         <!--link dưới giữ lại-->
-        
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--<script src="js/script.js"></script>-->
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body>
         <header id="header">
@@ -35,26 +33,14 @@
 
            
             <ul class="menu" id="main-menu">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <!-- <li class="sub">
-                    <a href="#">
-                      <span>Giới tính</span> 
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="sub-content">
-                        <li><a href="#">Nam</a></li>
-                        <li><a href="#">Nữ</a></li>
-                        <li><a href="#">Trẻ em</a></li>
-                        <li><a href="#">Unisex</a></li>
-                    </ul>
-                </li> -->
-                <li class="sub">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="Page2.html">Giới thiệu</a></li>
+                <li class="sub" id="sub">
                     <a href="#">
                       <span>Kiểu Giày</span>                         
-                      <i class="fa fa-angle-down"></i>
+                      <i class="fa fa-angle-down" id="angle-down"></i>
                     </a>
-                    <ul class="sub-content">
+                    <ul class="sub-content" id="sub-content">
                         <li><a href="#AirForce1">Air Force 1</a></li>
                         <li><a href="#AirJordan">Air Jordan</a></li>
                         <li><a href="#AirMax">Air Max</a></li>
@@ -74,6 +60,12 @@
            
         </header>
         <a href="javascript:;" title="Go to top" id="gototop"><i class="fa fa-arrow-up"></i></a>
+        <div id="mess">
+          <a href="https://www.facebook.com/profile.php?id=100008996220841" target="_blank" >
+            <img class="wow animate__headShake" data-wow-iteration = "infinite" src="https://78store.vn/img/iconmes.png"/>
+          </a>
+
+        </div>
         <section id="carousel">
             <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -119,7 +111,7 @@
                 </div>
               </div>
   
-              <div class="item">
+              <div class="item wow animate__fadeInUp">
                 <div class="item-img">
                   <img src="images/AirForce1/af-1-1-mens-shoes-kcdPxn.jpg" class="image"/> 
                   <div class="middle">
@@ -1370,89 +1362,53 @@
               </div>
             </div>
           </section>
-          <!--  <div  class="quantity">
-                      <p class="quantity-title">SỐ LƯỢNG</p>
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" id="quantity" value="1" />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-
-                    <div class="actions">
-                      <button class="cartplus">
-                        <span>THÊM VÀO GIỎ HÀNG</span>
-                      </button>
-                      <button class="buynow">
-                        <span>MUA NGAY</span>
-                      </button>
-                    </div> -->
-
-
-
-          <!-- <div class="pages">
-            <ul>
-              <li class="page-current">
-                <a href="index.html">
-                  1
-                </a>
-              </li>
-              <li class="page">
-                <a href="page2.html">
-                  2
-                </a>
-              </li>
-              <li class="page">
-                <a href="page3.html">
-                  3
-                </a>
-              </li>
-              <li class="page">
-                <a href="page4.html">
-                  4
-                </a>
-              </li>
-              <li class="page">
-                <a href="page2.html">
-                  <i class="fa fa-angle-double-right"></i>
-                </a>
-              </li>
-            </ul>
-          </div> -->
+          
           <footer>
             <div  class="footer-wrapper">
-              <div class="single-footer">
-                <a href="#"><img src="images/footer-logo.png"/></a>
-                <h3>NIKE STORE</h3>
-                <p>Nhà phân phối giày Nike chính hãng hàng đầu Việt Nam</p>
-                <p>Địa chỉ: 371 Nguyễn Kiệm, P. 3. Q. Gò Vấp, TP. Hồ Chí Minh </p>
-                <p><i class="fa fa-phone"></i> SĐT: 036 600 4732 (8:00-17:00)</p>
-                <p><i class="fa fa-fax"></i> Fax: +84 (28) 3825 6523</p>
-              </div>
-              <div class="single-footer">
-                <h4>Về Nike Store</h4>
-                <ul>
-                  <li><a href="#">Giới thiệu Nike Store</a></li>
-                  <li><a href="#">Chương trình khách hàng thân thiết</a></li>
-                  <li><a href="#">Hệ thống cửa hàng</a></li>
-                  <li><a href="#">Tuyển dụng</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </div>
-              <div class="single-footer">
-                <h4>Kết nối với chúng tôi</h4>
-                <div>
-                  <a href=""><i class="fa fa-facebook-square"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-instagram"></i></a>
-                  <a href=""><i class="fa fa-google"></i></a>
+              <div>
+                <div class="single-footer">
+                  <div class="footer-title"> 
+                    <a href="#"><img src="images/footer-logo.png"/></a>
+                    <h3>NIKE STORE</h3>
+                  </div>
+                  <p>Nhà phân phối giày Nike chính hãng hàng đầu Việt Nam</p>
+                  <p>Địa chỉ: 371 Nguyễn Kiệm, P. 3. Q. Gò Vấp, TP. Hồ Chí Minh </p>
+                  <p><i class="fa fa-phone"></i> SĐT: 036 600 4732 (8:00-17:00)</p>
+                  <p><i class="fa fa-fax"></i> Fax: +84 (28) 3825 6523</p>
                 </div>
-                <div class="googleMap">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9250508686623!2d106.67491891533437!3d10.817047661399183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1f241211f%3A0xc9ef195798144b1f!2zxJDhuqFpIGjhu41jIE3hu58gVFAuSENN!5e0!3m2!1svi!2s!4v1629632320185!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="single-footer">
+                  <div class="footer-title">
+                    <h4>Về Nike Store</h4>
+                  </div>
+                  
+                  <ul>
+                    <li><a href="#">Giới thiệu Nike Store</a></li>
+                    <li><a href="#">Chương trình khách hàng thân thiết</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+                <div class="single-footer">
+                  <div class="footer-title">
+                    <h4>Kết nối với chúng tôi</h4>
+                  </div>  
+                  <div class="icon-connect">
+                    <a href=""><i class="fa fa-facebook-square"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-google"></i></a>
+                  </div>
+                  <div class="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9250508686623!2d106.67491891533437!3d10.817047661399183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1f241211f%3A0xc9ef195798144b1f!2zxJDhuqFpIGjhu41jIE3hu58gVFAuSENN!5e0!3m2!1svi!2s!4v1629632320185!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
                 </div>
               </div>
               <div id="copyright">&copy;COPYRIGHT 2021 Nike Store - Cửa Hàng Giày Nike</div>
             
             </div>                
           </footer>
-          <script src="script.js" type="text/javascript"></script>
+          <script src="js/script.js" type="text/javascript"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     </body>
 </html>
