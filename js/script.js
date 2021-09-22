@@ -27,7 +27,7 @@ let showSize = document.querySelector('.show-item-size');
 
 let overPlay = document.querySelector('.overplay')
 
-console.log(showImage)
+// console.log(showImage)
 
 for (let i = 0; i < items.length; i++){ 
     btn[i].onclick = function () {
@@ -47,12 +47,21 @@ for (let i = 0; i < items.length; i++){
         overPlay.style.display = 'flex'
     }
 }
+
+let closeBtn = document.querySelector('div.close-btn')
+if (closeBtn) {
+    closeBtn.onclick = function(){
+        overPlay.style.display = 'none'
+    }
+}
+
 window.onclick = function(e){
     //console.log(e.target.classList.contains('overplay'))
     if (e.target.classList.contains('overplay')) {
         overPlay.style.display = 'none'
     }
 }
+
 
 // Nút go to top 
 $(document).ready(function() {
@@ -70,7 +79,7 @@ $(document).ready(function() {
     })
 
     $("div.items > div.item").addClass("wow animate__fadeInUp")
-
+    
     wow = new WOW({
         boxClass:     'wow',      // default
         animateClass: 'animate__animated', // default
@@ -80,6 +89,8 @@ $(document).ready(function() {
       })
       wow.init();
 })
+
+
 
 let sub = document.querySelector('li.sub');
 let subContent = document.getElementById('sub-content');
@@ -97,5 +108,4 @@ sub.onclick = function(){  // =>  tuong duong  function()
     }
    
 }
-
 

@@ -57,7 +57,7 @@ ul.menu>li{
 }
 ul.menu>li:last-child{
     width: auto;
-    padding: 16px;
+    padding: 15px;
 }
 ul.menu>li>a{
     text-decoration: none;
@@ -121,7 +121,7 @@ ul.menu>li>a:hover{
 }
 /*Phần CAROUSEL*/
 #carousel{
-    width: 90%;
+    width: 100%;
     margin:0 auto;
 }
 #carousel img{
@@ -150,6 +150,7 @@ ul.menu>li>a:hover{
     bottom: 10px;
     /* animation: quick-alo-circle-img-anim 1s infinite ease-in-out; */
     cursor: pointer;
+    z-index: 5;
 }
 #mess img{
     width: 45px;
@@ -300,6 +301,7 @@ div.show-item{
     margin: auto;
     background-color: #fff;
     display: flex;
+    position: relative;
 }
 div.show-item-image{
     flex: 3;
@@ -365,9 +367,32 @@ button.buynow{
     margin-top: 10px;
     background-color: #000;
     color: #fff;
-
+}
+div.actions{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+button.like-btn,
+button.share-btn {
+    width: 49%;
+    border: none;
+    padding: 10px;
 }
 
+div.close-btn{
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    /* z-index: -1; */
+    cursor: pointer;
+}
+i.fa-times{
+    font-size: 36px;
+    color: #fff;
+    opacity: 0.8;
+}
 
 
 
@@ -435,9 +460,10 @@ div.single-footer>div>a>i{
 div#copyright{
     color: #fff;
     width: 100%;
-    text-align: center;
     padding: 10px 0;
     border-top: 1px solid #fff;
+    display: block;
+    text-align: center;
 }
 
 
@@ -450,12 +476,12 @@ div#copyright{
 @media only screen and (min-width: 1500px){
     /*Phần MENU*/
     ul.menu{
-        height: 60px;
+        height: 55px;
         justify-content: center;
     }
     ul.menu>li{
         padding:0 20px;
-        height: 60px;
+        height: 58px;
         width: 13%;
     }
     ul.menu>li:nth-child(6){
@@ -494,7 +520,7 @@ div#copyright{
 @media only screen and (max-width: 1500px){
     /*Phần MENU*/
     ul.menu>li>a{
-        padding: 14px;
+        padding: 15px;
     }
     /*phần SẢN PHẨM*/
     #product .item .item-detail a{
@@ -582,11 +608,15 @@ div#copyright{
         display: flex;
         justify-content: space-between;
     } 
-    ul.menu>li>a>i{
+    #angle-down{
         padding: 4px 10px;
         color: #000;
         background-color: #fff;
         border-radius: 5px;
+    }
+    .shopping-cart{
+        justify-content: unset !important;
+        align-items: center;
     }
     ul.sub-content{
         position: relative !important;
@@ -619,14 +649,15 @@ div#copyright{
     div.show-item-image img{
         width: 50%;
     }
+    
 
 
-    /*CAROUSEL*/
-    #carousel{
-        width: 100%;
-    }
     /*FOOTER*/
     div.single-footer{
-        width: 45%;
+        width: fit-content;
+        text-align: center;
+    }
+    div.footer-wrapper > div{
+        flex-direction: column;
     }
 }
