@@ -298,10 +298,12 @@ div.overplay{
 }
 div.show-item{
     width: 80%;
+    height: 80%;
     margin: auto;
     background-color: #fff;
     display: flex;
     position: relative;
+    overflow: auto;
 }
 div.show-item-image{
     flex: 3;
