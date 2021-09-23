@@ -22,12 +22,10 @@ div.toggle{
     color: #fff;
     cursor: pointer;
     font-size: 20px;
-    /*width: 33px;
-    height: 33px;*/
     text-align: left;
     padding: 10px;
     display: none;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     
 }
 
@@ -104,7 +102,7 @@ ul.menu>li>a:hover{
 
     position: absolute;
     z-index: 10;
-    width: 100%;
+    /* width: 100%; */
 }
 .sub-content>li>a{
     color: #000;
@@ -588,6 +586,9 @@ div#copyright{
 }
 @media only screen and (max-width: 767px) {
     /*Phần MENU*/
+    .bg-logo{
+        height: 54px;
+    }
     ul.menu{
         flex-direction: column;
         border: none;
@@ -626,12 +627,13 @@ div#copyright{
     }
     div.toggle{
         display: block;
-        width: 53px;
-        height: 54px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         z-index: 100;
         text-align: center;
-        border-radius: 10%;
+        border-radius: 25%;
+        margin: 2px;
     }  
     div.bg-logo>a>img.logo{
         width: 100px;

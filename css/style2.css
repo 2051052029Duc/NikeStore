@@ -138,3 +138,23 @@ div.tks{
     text-align: center;
     font-weight: bolder;
 }
+@media only screen and (max-width: 1120px)  {
+    
+    div#box1 span{
+        font-size: 2em;
+    }
+    div#box2 span{
+        font-size: 2em;
+    }
+    div.overview-air-jordan div,
+    div.overview-air-force-1 div,
+    div.overview-air-max div,
+    div.overview-air-vapomax div,
+    div.overview-zoom-pegasus div{
+        flex-direction: column;
+    }
+    p.intro-shoes,
+    p.img-shoes{
+        width: 100%;
+    }
+}
