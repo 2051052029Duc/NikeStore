@@ -16,7 +16,9 @@ body{
     width: 100%;
     /* transition: all 0.3s ease-in; */
 }
-
+li{
+    list-style-type: none;
+}
 div.toggle{
     background-color: #e67e22;
     color: #fff;
@@ -39,7 +41,6 @@ img.logo{
 
 ul.menu{
     background-color: #000;/*  #02e793 */
-    list-style-type: none;
     z-index: 10;
     justify-content: space-between;
     display: flex;
@@ -96,13 +97,16 @@ ul.menu>li>a:hover{
     display: none;
     background-color: #fff;
     text-decoration: none;
-    list-style-type: none;
+    /* list-style-type: none; */
     width: 160px;
     left: -1px;
 
     position: absolute;
     z-index: 10;
     /* width: 100%; */
+}
+.sub-content li {
+    border-bottom: 1px solid;
 }
 .sub-content>li>a{
     color: #000;
@@ -394,6 +398,50 @@ i.fa-times{
     opacity: 0.8;
 }
 
+/* Phần hỗ trợ khách hàng  */
+section.hotro{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+div.container{
+    margin: 0 auto;
+}
+ul.menu-hotro{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+ul.menu-hotro li {
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    width: 15%;
+}
+
+ul.menu-hotro li a{
+    color: #000;
+    font-size: 36px;
+}
+ul.menu-hotro li:hover{
+    transform: scale(1.1);
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+ul.menu-hotro li div p {
+    font-size:12px;
+    margin-bottom: 0;
+    
+}
+.bold{
+    font-weight: bolder;
+}
+
+
+
 
 
 /*Phần FOOTER*/
@@ -431,9 +479,9 @@ div.footer-title>a>img{
     width: 130px;
     height: 50px;
 }
-div.single-footer>ul>li{
+/* div.single-footer>ul>li{
     list-style-type: none;
-}
+} */
 div.single-footer>ul>li>a{
     color: #fff;
     padding: 10px 0;
@@ -531,6 +579,36 @@ div#copyright{
     }
     div.item{
         width: 32%;
+    }
+}
+@media only screen and (max-width: 1120px)  {
+    ul.menu-hotro li{
+        width: 50%;
+    }
+
+    div#box1 span{
+        font-size: 2em;
+    }
+    div#box2 span{
+        font-size: 2em;
+    }
+    div.overview-air-jordan div,
+    div.overview-air-force-1 div,
+    div.overview-air-max div,
+    div.overview-air-vapomax div,
+    div.overview-zoom-pegasus div{
+        flex-direction: column;
+    }
+    p.intro-shoes,
+    p.img-shoes{
+        width: 100%;
+    }
+    div.overview-air-jordan div p,
+    div.overview-air-force-1 div p,
+    div.overview-air-max div p,
+    div.overview-air-vapomax div p,
+    div.overview-zoom-pegasus div p{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 1024px) {

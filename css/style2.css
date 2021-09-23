@@ -138,8 +138,8 @@ div.tks{
     text-align: center;
     font-weight: bolder;
 }
+
 @media only screen and (max-width: 1120px)  {
-    
     div#box1 span{
         font-size: 2em;
     }
@@ -156,5 +156,12 @@ div.tks{
     p.intro-shoes,
     p.img-shoes{
         width: 100%;
+    }
+    div.overview-air-jordan div p,
+    div.overview-air-force-1 div p,
+    div.overview-air-max div p,
+    div.overview-air-vapomax div p,
+    div.overview-zoom-pegasus div p{
+        font-size: 16px;
     }
 }
