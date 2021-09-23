@@ -27,7 +27,6 @@ div.toggle{
     text-align: left;
     padding: 10px;
     display: none;
-    /* border: 1px solid #000; */
     
 }
 
@@ -49,7 +48,6 @@ ul.menu{
 }
 ul.menu>li{
     position: relative;
-    /* max-width: 200px; */
     width: 15%;/*fit-content*/
     padding: 0 16px;
     text-align: center;
@@ -86,9 +84,6 @@ div.search>button>i{
     font-size: 18px;  
 }
 
-/* ul.menu>li:hover{
-    background-color: lightgray;
-} */
 ul.menu>li>a:hover{
     color: #e67e22;
     transition: all 0.2s ease-in;
@@ -97,13 +92,11 @@ ul.menu>li>a:hover{
     display: none;
     background-color: #fff;
     text-decoration: none;
-    /* list-style-type: none; */
     width: 205px;
     left: -1px;
-
     position: absolute;
     z-index: 10;
-    /* width: 100%; */
+
 }
 .sub-content li {
     border-bottom: 1px solid;
@@ -113,9 +106,7 @@ ul.menu>li>a:hover{
     display: block;
     padding: 7px 15px;
 }
-/* .sub:hover .sub-content{
-    display: block;
-}  */
+
 .sub-content>li>a:hover{
     color: #f39c12;
     text-decoration: none;
@@ -150,7 +141,6 @@ ul.menu>li>a:hover{
     position: fixed;
     right: 20px;
     bottom: 10px;
-    /* animation: quick-alo-circle-img-anim 1s infinite ease-in-out; */
     cursor: pointer;
     z-index: 5;
 }
@@ -414,22 +404,27 @@ ul.menu-hotro{
     flex-wrap: wrap;
 }
 ul.menu-hotro li {
+    /* flex: 1; */
     text-align: center;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     width: 15%;
+    /* position: relative; */
 }
 
 ul.menu-hotro li a{
     color: #000;
     font-size: 36px;
+    text-align: center;
 }
 ul.menu-hotro li:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     /* padding-top: 20px; */
     /* padding-bottom: 20px; */
     /* margin-top: 20px; */
     /* margin-bottom: 20px; */
+    /* position: relative; */
+    transform: translateY(-10px);
 }
 ul.menu-hotro li div p {
     font-size:12px;
