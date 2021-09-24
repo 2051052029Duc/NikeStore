@@ -134,10 +134,7 @@ section.intro-nike-store div ul li{
     padding: 5px 15px;
     font-size: 20px;
 }
-div.tks{
-    text-align: center;
-    font-weight: bolder;
-}
+
 
 @media only screen and (max-width: 1120px)  {
     div#box1 span{

@@ -275,7 +275,24 @@ div.content-product>div{
 div.more{
     display: none;
 }
+
+div.tks{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+}
 /* Phần overPlay */
+@keyframes phongTo {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 div.overplay{
     position: fixed;
     top: 0;
@@ -296,6 +313,7 @@ div.show-item{
     display: flex;
     position: relative;
     overflow: auto;
+    animation: phongTo 0.5s ease;
 }
 div.show-item-image{
     flex: 3;
