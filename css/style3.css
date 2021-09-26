@@ -1,4 +1,59 @@
+
 div.news{
     width: 100%;
     text-align: center;
+    margin-bottom: 30px; 
+}
+section.news-section{
+    width: 100%;
+}
+div.post-list-wrapper>div:first-child{
+    width: 85%;
+    display: flex;
+    margin: 0 auto 10px;
+    max-width: 1344px;
+    /* overflow: auto; */
+}
+div.post{
+    width: 50%;
+    /* float: left; */
+}
+div.post-title,
+div.post-item-title{
+    color: #000;
+}
+div.post-detail{
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+}
+div.post-action{
+    position: absolute;
+    bottom: 0;
+}
+
+div.post-items{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1344px;
+}
+div.post-item{
+    width: 30%;
+    margin: 20px;
+    position: relative;
+}
+div.post-item-action,
+div.post-action{
+    /* position: absolute; */
+    border: 1px solid;
+    padding: 10px 0;
+    width: fit-content;
+}
+div.post-item-action a,
+div.post-action a{
+    padding: 12px 15px;
+    color: #000;
 }
