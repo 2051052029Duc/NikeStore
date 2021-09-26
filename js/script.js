@@ -89,9 +89,6 @@ $(document).ready(function() {
       })
       wow.init();
 })
-
-
-
 let sub = document.querySelector('li.sub');
 let subContent = document.getElementById('sub-content');
 let angle = document.querySelector('#angle-down')
