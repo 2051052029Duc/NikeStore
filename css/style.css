@@ -9,6 +9,9 @@ html{
 body{
     background-color: #fff;
 }
+a{
+    text-decoration: none !important;
+}
 /*Phần HEADER*/
 #header{
     background-color: #fff;
@@ -164,8 +167,7 @@ div.content-product>div{
     font-size: 20px;
     color: #fff;
     border-radius: 10px 10px 0 0;
-    text-align: center;
-    
+    text-align: center;    
 }
 /*Phần sản phẩm*/
 .btn::before{
@@ -545,7 +547,7 @@ div#copyright{
     ul.menu{
         height: 55px;
         justify-content: center;
-        max-width: 1344px;
+        max-width: 1500px;
         margin: 0 auto;
     }
     ul.menu>li{
