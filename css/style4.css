@@ -95,6 +95,14 @@ div.some-news-title{
 div.some-news-title a{
     color: #000;
 }
+div.some-news-title a:hover{
+    color: #e67e22;
+}
 div.some-news-img{
     width: 30%;
+    overflow: hidden;
+}
+div.some-news:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
