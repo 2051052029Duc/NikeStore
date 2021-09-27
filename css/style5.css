@@ -1,0 +1,86 @@
+.a-border{
+    display: inline-block;
+    padding-left: 1%;
+}
+.title-page4{
+    text-align: center;
+}
+.text-discription{
+    overflow: auto;
+}
+
+li.text-name{
+    padding-top: 2%;
+}
+
+
+li.text-information{
+    display: inline-block;
+    padding-top: 2%;
+}
+
+button.button-send{
+    width: 100px;
+    height: 50px;
+    background: black;
+    align-self: auto;
+}
+
+button.button-send>i{
+    color: white;
+}
+
+.something{
+    width: 75%;
+    font-size: 25px;
+}
+
+.just-do-it{
+    height: 250px;
+    width: 150px;
+    padding-top: 50px;
+}
+
+.uy-tin{
+    padding:0%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.address{
+    width:100%;
+    padding-right: 175px;
+    padding-top: 45px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.call-me{
+    display: flex;
+}
+.something,
+.all-infor,
+.text-name,
+.text-information,
+.notice,
+.send{
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 1120px){
+    div.call-me{
+        flex-direction: column;
+    }
+    div.address{
+        padding-left:100px;
+        padding-right:5px;
+    }
+    textarea.text-discription,
+    input.text-full-name{
+        width: 375px !important;
+    }
+    div.something{
+        width:475px;
+    }
+}
