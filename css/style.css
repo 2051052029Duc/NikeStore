@@ -37,8 +37,7 @@ div.toggle{
     text-align: center;
 }
 img.logo{
-    width: 300px;
-    height: 140px;
+    width: 350px;
 }
 div.wrap{
     width: 100%;
@@ -288,6 +287,10 @@ div.tks{
     text-align: center;
     font-weight: bolder;
     margin-top: 30px;
+}
+
+div.size:active{
+    background-color: #ccc;
 }
 /* Phần overPlay */
 @keyframes phongTo {
