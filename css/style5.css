@@ -3,18 +3,29 @@
     padding-left: 1%;
 }
 .title-page4{
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align: center;
 }
 .text-discription{
     overflow: auto;
+    resize: none;
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 650px;
 }
 
-li.text-name{
+.comment{
+    padding-bottom: 20px;
+}
+
+div.text-name{
     padding-top: 2%;
 }
 
 
-li.text-information{
+div.text-information{
     display: inline-block;
     padding-top: 2%;
 }
@@ -39,6 +50,7 @@ button.button-send>i{
     height: 250px;
     width: 150px;
     padding-top: 50px;
+    margin-left: 225px;
 }
 
 .uy-tin{
@@ -69,18 +81,44 @@ button.button-send>i{
 }
 
 @media only screen and (max-width: 1120px){
-    div.call-me{
-        flex-direction: column;
-    }
     div.address{
-        padding-left:100px;
+        padding-left:25px;
         padding-right:5px;
+        max-width: 500px;
     }
     textarea.text-discription,
-    input.text-full-name{
+    input.text-full-name,
+    input.text-email,
+    input.text-phonenumber{
         width: 375px !important;
     }
     div.something{
         width:475px;
     }
+}
+
+@media only screen and (max-width: 910px){
+    div.call-me{
+        flex-direction: column;
+    }
+
+    div.something{
+        width:800px;
+        text-align: center;
+        padding: 15px;
+        }
+
+    div.address{
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1370px){
+    textarea.text-discription,
+    input.text-full-name,
+    input.text-email,
+    input.text-phonenumber{
+        width: 475px !important;
+    }
+
 }
