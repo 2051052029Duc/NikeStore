@@ -13,7 +13,7 @@
     padding-top: 0.5%;
     padding-left: 1%;
     padding-right: 1%;
-    width: 650px;
+    width: 100%;
 }
 
 .comment{
@@ -28,6 +28,7 @@ div.text-name{
 div.text-information{
     display: inline-block;
     padding-top: 2%;
+    width: 49%;
 }
 
 button.button-send{
@@ -48,15 +49,13 @@ input.text-phonenumber{
 }
 
 .something{
-    width: 75%;
+    width: 80%;
     font-size: 25px;
+    margin: 0 auto;
 }
 
 .just-do-it{
-    height: 250px;
-    width: 150px;
-    padding-top: 50px;
-    margin-left: 225px;
+    width: 50%;
 }
 
 .uy-tin{
@@ -68,38 +67,52 @@ input.text-phonenumber{
 
 .address{
     width:100%;
-    padding-right: 175px;
-    padding-top: 45px;
-    text-align: left;
     font-size: 25px;
+    margin-top: 30px;
 }
 
 .call-me{
     display: flex;
 }
-.something,
+/* .something,
 .all-infor,
 .text-name,
 .text-information,
 .notice,
 .send{
     padding-left: 100px;
+} */
+div.nhap{
+    width: 100%;
+}
+div.nhap > div{
+    width: 80%;
+    margin: 0 auto;
+}
+.notice,
+.button-send{
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 1120px){
     div.address{
-        padding-left:25px;
-        padding-right:5px;
-        max-width: 500px;
+        width: 100%;
+    }
+    div.address > div {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
     textarea.text-discription,
     input.text-full-name,
     input.text-email,
     input.text-phonenumber{
-        width: 375px !important;
+        width: 100%;
     }
     div.something{
-        width:475px;
+        width: 100%;
     }
 }
 
@@ -109,18 +122,18 @@ input.text-phonenumber{
     }
 
     div.something{
-        width:800px;
+        width: 100%;
         text-align: center;
         padding: 15px;
         }
-    div.all-infor,
+    /* div.all-infor,
     div.text-name,
     div.text-information,
     div.address,
     p.notice,
     div.send{
-        padding-left: 150px;
-    }
+        padding-left: 150px; 
+    } */
 }
 
 @media only screen and (max-width: 1370px){
@@ -128,7 +141,7 @@ input.text-phonenumber{
     input.text-full-name,
     input.text-email,
     input.text-phonenumber{
-        width: 475px !important;
+        width: 100%;
     }
 
 }
