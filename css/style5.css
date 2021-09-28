@@ -41,6 +41,12 @@ button.button-send>i{
     color: white;
 }
 
+input.text-full-name,
+input.text-email,
+input.text-phonenumber{
+    padding-left: 1%;
+}
+
 .something{
     width: 75%;
     font-size: 25px;
@@ -107,9 +113,13 @@ button.button-send>i{
         text-align: center;
         padding: 15px;
         }
-
-    div.address{
-        padding-left: 100px;
+    div.all-infor,
+    div.text-name,
+    div.text-information,
+    div.address,
+    p.notice,
+    div.send{
+        padding-left: 150px;
     }
 }
 
