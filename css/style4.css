@@ -38,24 +38,18 @@ div.news-right{
     flex-wrap: wrap;
     overflow: hidden;
 }
-div.news-right img{
-    height: 507.42;
-    
-}
+
 div.news-right-img{
     position: relative;
     overflow: hidden;
     width: 50%;
-}
-div.news-right-img img {
-    height: 250px;
 }
 div.news-title{
     position: absolute;
     bottom: 0;
     padding: 0 0 10px 10px;
     color: #fff;
-    background-image: linear-gradient(0, rgba(0, 0, 0, 0.5),rgba(255, 252, 252, 0));
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.6),rgba(255, 252, 252, 0));
     width: 100%;
 }
 div.different-news{
@@ -105,4 +99,29 @@ div.some-news-img{
 div.some-news:hover img {
     transform: scale(1.1);
     transition: all 0.3s ease;
+}
+@media  only screen and (max-width: 1500px){
+    section.news,
+    div.different-news,
+    section.different-news-wrapper{
+        max-width: 1130px;
+        margin: 10px auto;
+    }
+}
+@media  only screen and (max-width: 1030px){
+    div.news-wrapper > div{
+        flex-direction: column;
+    }
+    div.news-left,
+    div.news-right{
+        width: 100%;
+    }
+}
+@media  only screen and (max-width: 767px){
+    div.some-news-title{
+        font-size: 18px;
+    }
+    div.some-news-Excerpts{
+        font-size: 14px;
+    }
 }
