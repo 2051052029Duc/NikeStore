@@ -86,6 +86,9 @@ for (let i = 0; i < items.length; i++){
     }
 }
 
+
+
+
 let closeBtn = document.querySelector('div.close-btn')
 if (closeBtn) {
     closeBtn.onclick = function(){
@@ -143,7 +146,24 @@ sub.onclick = function(){  // =>  tuong duong  function()
     }
    
 }
-
+let btnSearch = document.querySelector('.btn-search')
+btnSearch.onclick = function(){
+    let k = document.querySelector('#kw')
+    if(k != null){
+        k = k.value.toUpperCase()
+        // const nameItem = items[i].querySelector('.item-detail .item-name').innerText
+        for (let i = 0; i < items.length; i++){
+            var name = items[i].querySelector('.item-name').innerText
+            // console.log(name)
+            if (name.indexOf(k) >= 0) {
+                items[i].style.display = "block";
+            }
+            else{
+                items[i].style.display = "none";
+            }
+        }
+    }
+}
 
 
 

@@ -85,6 +85,7 @@ div.search input{
 div.search>button{
     border: none;
     background: transparent !important;
+    outline: none;
 }
 div.search>button>i{
     padding: 0 13px;
