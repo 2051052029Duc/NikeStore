@@ -352,9 +352,10 @@ div.show-item-size>div{
     border: 1px solid #000;
     cursor: pointer;
 }
-div.show-item-size>div:hover{
+/* div.size-Number:active{
     background-color: #A9A9A9;
-}
+} */
+
 .quantity-title{
     margin: 5px 0;
     font-weight: 500;
@@ -543,6 +544,9 @@ div#copyright{
 .active{
    /* position: relative; */
     display: block;
+}
+.active2{
+    background-color: #A9A9A9;
 }
 
 @media only screen and (min-width: 1500px){
@@ -775,4 +779,7 @@ div#copyright{
     div.footer-wrapper > div{
         flex-direction: column;
     }
+}
+.heart {
+    color: #eb2f06;
 }

@@ -38,13 +38,51 @@ for (let i = 0; i < items.length; i++){
         const sizeItem = items[i].querySelector('.item-detail .size').innerHTML
         
         showImage.src = imageItem;
-        // console.log(imageItem)
+        
         console.log(showImage)
         showName.innerHTML = nameItem;
         showPrice.innerHTML = priceItem;
         showSize.innerHTML = sizeItem; 
         
         overPlay.style.display = 'flex'
+        let sizeNumber = document.querySelectorAll('.size-number')
+
+        for (let j = 0; j < sizeNumber.length; j++){
+            sizeNumber[j].onclick = function(){
+                const itemActive = document.querySelector('.size-number.active2')
+                if (itemActive){
+                    itemActive.classList.remove('active2')
+                }
+                sizeNumber[j].classList.add('active2')
+            }
+        }
+        let minusBtn = document.querySelector('.minus-btn')
+        // console.log(minusBtn)
+        let valueCount = 1; 
+        let plusBtn = document.querySelector('.plus-btn')
+        // console.log(plusBtn)
+        plusBtn.onclick = function(){
+            // let quantity = document.getElementById('quantity').value
+            valueCount++;
+            document.getElementById('quantity').value = valueCount;
+            
+        }
+        minusBtn.onclick = function(){
+            // let quantity = document.getElementById('quantity').value
+            valueCount--;     
+            if (valueCount <= 1){
+                valueCount = 1;
+            }   
+            document.getElementById('quantity').value = valueCount;
+        }
+        // let likeBtn = document.querySelector('.like-btn')
+        // let heart = document.querySelector('#heart')
+        // likeBtn.onclick = function(){
+        //     const likeBtnActive = document.querySelector('.fa-heart.heart')            
+        //     if (likeBtnActive)
+        //         likeBtnActive.classList.remove('heart')
+        //     heart.classList.add('heart')
+        // }
     }
 }
 
@@ -105,4 +143,7 @@ sub.onclick = function(){  // =>  tuong duong  function()
     }
    
 }
+
+
+
 

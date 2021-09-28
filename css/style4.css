@@ -24,6 +24,7 @@ div.news-right{
 div.news-left{
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 div.news-left:hover img {
     transform: scale(1.1);
@@ -43,6 +44,7 @@ div.news-right-img{
     position: relative;
     overflow: hidden;
     width: 50%;
+    cursor: pointer;
 }
 div.news-title{
     position: absolute;
