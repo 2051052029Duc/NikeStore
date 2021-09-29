@@ -94,6 +94,10 @@ div.nhap > div{
     width: 80%;
     margin: 0 auto;
 }
+/* .send{
+    width: 80%;
+    margin: 0 auto;
+} */
 
 @media only screen and (max-width: 1120px){
     div.address{
