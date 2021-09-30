@@ -1,0 +1,30 @@
+div.nothing{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+}
+
+div.title-page5{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+a.way-back-home{
+    color: red;
+}
+
+.just-buy-it{
+    width:25%;
+}
+
+button.reward{
+    width: 200px;
+    height: 50px;
+}
+
+div.register>div>i{
+    color: white;
+}
+ div.register>div>span{
+     color: white;
+ }
