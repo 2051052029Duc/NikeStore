@@ -15,20 +15,15 @@ mobileMenu.onclick = function(){
         openMenu()
     }
 }
-
 // phần overplay
 let items = document.querySelectorAll('.item')
 let btn = document.querySelectorAll('.middle span')
-
-let showImage = document.querySelector('.show-item-image img');
-let showName = document.querySelector('.show-item-name');
-let showPrice = document.querySelector('.show-item-price');
-let showSize = document.querySelector('.show-item-size');
-
+let showImage = document.querySelector('.show-item-image img')
+let showName = document.querySelector('.show-item-name')
+let showPrice = document.querySelector('.show-item-price')
+let showSize = document.querySelector('.show-item-size')
 let overPlay = document.querySelector('.overplay')
-
 // console.log(showImage)
-
 for (let i = 0; i < items.length; i++){ 
     btn[i].onclick = function () {
         const imageItem = items[i].querySelector('.item-img img').src
@@ -75,35 +70,20 @@ for (let i = 0; i < items.length; i++){
             }   
             document.getElementById('quantity').value = valueCount;
         }
-        // let likeBtn = document.querySelector('.like-btn')
-        // let heart = document.querySelector('#heart')
-        // likeBtn.onclick = function(){
-        //     const likeBtnActive = document.querySelector('.fa-heart.heart')            
-        //     if (likeBtnActive)
-        //         likeBtnActive.classList.remove('heart')
-        //     heart.classList.add('heart')
-        // }
     }
 }
-
-
-
-
 let closeBtn = document.querySelector('div.close-btn')
 if (closeBtn) {
     closeBtn.onclick = function(){
         overPlay.style.display = 'none'
     }
 }
-
 window.onclick = function(e){
     //console.log(e.target.classList.contains('overplay'))
     if (e.target.classList.contains('overplay')) {
         overPlay.style.display = 'none'
     }
 }
-
-
 // Nút go to top 
 $(document).ready(function() {
     $("#gototop").hide()
@@ -144,7 +124,6 @@ sub.onclick = function(){  // =>  tuong duong  function()
         subContent.classList.add('active');
         angle.style.transform = "rotate(180deg)";
     }
-   
 }
 let btnSearch = document.querySelector('.btn-search')
 btnSearch.onclick = function(){

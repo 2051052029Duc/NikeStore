@@ -231,8 +231,7 @@ div.content-product>div{
 .item:hover .image{
     opacity: 0.3;
 }
-.item:hover .middle{
-    
+.item:hover .middle{   
     opacity: 1;
 }
 
@@ -301,15 +300,20 @@ div.new-product{
     background: #e84118;
     border-radius: 5%;
     color: #fff;
-    font-style: italic;
+    /* font-style: italic; */
+    
 }
+div.new-product>div{
+    transform: skewX(-15deg);
+}
+
 /* Phần overPlay */
 @keyframes phongTo {
     0% {
         transform: scale(0.5);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     100% {
         transform: scale(1);
@@ -435,7 +439,8 @@ section.hotro{
     padding: 10px 0;
     margin-top: 30px;
 }
-div.container{
+div.container-hotro{
+    max-width: 1500px;
     margin: 0 auto;
 }
 ul.menu-hotro{
@@ -475,10 +480,10 @@ ul.menu-hotro li div p {
 .bold{
     font-weight: bolder;
 }
-
-
-
-
+div.container-hotro{
+    /* display: flex; */
+    /* justify-content: center; */
+}
 
 /*Phần FOOTER*/
 
@@ -515,9 +520,6 @@ div.footer-title>a>img{
     width: 130px;
     height: 50px;
 }
-/* div.single-footer>ul>li{
-    list-style-type: none;
-} */
 div.single-footer>ul>li>a{
     color: #fff;
     padding: 10px 0;
@@ -548,6 +550,7 @@ div#copyright{
     border-top: 1px solid #fff;
     display: block;
     text-align: center;
+    background-color: #000;
 }
 
 
@@ -564,7 +567,7 @@ div#copyright{
     /*Phần MENU*/
     ul.menu{
         height: 55px;
-        justify-content: center;
+        justify-content: space-between;
         max-width: 1500px;
         margin: 0 auto;
     }
@@ -596,6 +599,10 @@ div#copyright{
     #product .price{
         font-size: 30px;
     }
+    div.container-hotro{
+    max-width: 1500px;
+    margin: 0 auto;
+}
     /*phần FOOTER*/
     div.single-footer{
         /* margin-left: 3%; */
@@ -604,6 +611,9 @@ div#copyright{
     div.googleMap>iframe{
         width: 470px;
         height: 300px;
+    }
+    div.footer-wrapper> div{
+        max-width: 1800px;
     }
 }
 @media only screen and (max-width: 1500px){
@@ -620,6 +630,10 @@ div#copyright{
     }
     div.item{
         width: 32%;
+    }
+    div.container-hotro{
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 1120px)  {
@@ -671,55 +685,6 @@ div#copyright{
     ul.menu>li:nth-child(5){
         width: 12%;
     } 
-    /*phần FOOTER*/
-    div.googleMap{
-        display: none;
-    }
-
-    /*phần sản phẩm*/
-    div.item{
-        width: 32%;
-    }
-    div.item-detail a{
-        font-size: 14px;
-    }
-    #product .price{
-        font-size: 14px;
-    }
-    div.item{
-        width: 48%;
-    }
-    div.items{
-        justify-content: center;
-    }
-}
-@media only screen and (max-width: 767px) {
-    /*Phần MENU*/
-    
-    
-    
-    /*OVERPLAY*/
-    div.show-item{
-        flex-direction: column;
-    }
-    div.show-item-image{
-        width: 100%;
-        text-align: center;
-    }
-    div.show-item-image img{
-        width: 50%;
-    }
-    
-    /*FOOTER*/
-    div.single-footer{
-        width: fit-content;
-        text-align: center;
-    }
-    div.footer-wrapper > div{
-        flex-direction: column;
-    }
-}
-@media only screen and (max-width: 1024px){
     .bg-logo{
         height: 54px;
     }
@@ -737,7 +702,7 @@ div#copyright{
         width: 100%;
         text-align: left;
         padding-left: 10px;
-        max-width: unset;/*cho xuong duoi*/
+        max-width: unset;
     }
 
     ul.menu>li>a{
@@ -783,6 +748,49 @@ div#copyright{
         border-radius: 25%;
         margin: 2px;
     }  
+    /*phần FOOTER*/
+    div.googleMap{
+        display: none;
+    }
+
+    /*phần sản phẩm*/
+    div.item{
+        width: 32%;
+    }
+    div.item-detail a{
+        font-size: 14px;
+    }
+    #product .price{
+        font-size: 14px;
+    }
+    div.item{
+        width: 48%;
+    }
+    div.items{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 767px) { 
+    /*OVERPLAY*/
+    div.show-item{
+        flex-direction: column;
+    }
+    div.show-item-image{
+        width: 100%;
+        text-align: center;
+    }
+    div.show-item-image img{
+        width: 50%;
+    }
+    
+    /*FOOTER*/
+    div.single-footer{
+        width: fit-content;
+        text-align: center;
+    }
+    div.footer-wrapper > div{
+        flex-direction: column;
+    }
 }
 .heart {
     color: #eb2f06;

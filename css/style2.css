@@ -41,6 +41,7 @@ div#box2>span
     font-size: 3em;
     font-weight: 800;
     opacity: 0.8;
+    text-align: center;
 }
 div.overview{
     display: flex;
